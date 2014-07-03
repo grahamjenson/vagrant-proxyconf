@@ -8,6 +8,11 @@ module VagrantPlugins
         Config::AptProxy
       end
 
+      config 'docker_proxy' do
+        require_relative 'config/docker_proxy'
+        Config::DockerProxy
+      end
+
       config 'env_proxy' do
         require_relative 'config/env_proxy'
         Config::EnvProxy
